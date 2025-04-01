@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.footer {
+  background-color: #222; /* Nền xám đậm cho footer */
+  color: white; /* Chữ trắng */
+  text-align: center;
+  padding: 20px;
+  margin-top: auto; /* Đẩy footer xuống dưới cùng */
+}

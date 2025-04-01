@@ -1,0 +1,27 @@
+.button {
+  padding: 1rem 2rem;
+  background-color: #64ffda;
+  color: #0a192f;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  border: none;
+}
+
+.button:hover {
+  background-color: #112240;
+  color: #64ffda;
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #64ffda;
+}
+
+.button-link {
+  display: inline-block;
+  text-align: center;
+} 

@@ -1,0 +1,133 @@
+.headerContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center; 
+  gap: 20px;
+  font-family:
+    JetBrains Mono NL,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-weight: 400;
+  /* background-color: rgb(199, 185, 185); */
+  padding: 2px;
+  margin: 10px;
+
+}
+
+@media (width<=991px) {
+  .headerContainer {
+    max-width: 100%;
+  }
+}
+
+.nameSection {
+  color: #000;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  margin-top: 5px;
+  padding: 3px 14px;
+  display: flex;
+  overflow: hidden;
+  text-decoration: none; 
+  color: inherit; 
+}
+
+.nameSection:hover {
+  opacity: 0.9; 
+}
+
+@media (width<=991px) {
+  .nameSection {
+    max-width: 100%;
+  }
+}
+
+.nameTitle {
+  font-size: 30px;
+  margin: 0;
+  font-family: JetBrains Mono NL Thin;
+  color: #ffffff;
+}
+
+@media (width<=991px) {
+  .nameTitle {
+    max-width: 100%;
+    font-size: 40px;
+  }
+}
+
+.roleText {
+  font-size: 13px;
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 2px;
+  color: #ffffff;
+}
+
+.logoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: stretch;
+  padding: 10px;
+  font-size: 15px;
+  margin-right: 10px; 
+  align-self: center; 
+  text-decoration: none; 
+  color: inherit; 
+}
+
+.logoContainer:hover {
+  opacity: 0.9; 
+}
+
+@media (width<=991px) {
+  .logoContainer {
+    white-space: initial;
+  }
+}
+
+.logoWrapper {
+  align-items: stretch;
+  gap: 5px;
+  width: 100%;
+  display: flex;
+}
+
+@media (width<=991px) {
+  .logoWrapper {
+    white-space: initial;
+  }
+}
+
+.logoText {
+  color: #ffffff;
+  flex-grow: 1;
+  font-size: 18px;
+  opacity: 0.7;
+}
+
+.logoDot {
+  color: #ffffff;
+  font-size: 15px;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.logoCode {
+  background: linear-gradient(#000000, #946869, #838484);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  padding-top: 3px;
+  padding-left: 4px;
+}
+

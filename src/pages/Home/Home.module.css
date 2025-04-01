@@ -1,0 +1,25 @@
+.homeContainer {
+  background-color: rgb(15, 15, 15); /* Đặt màu nền của Home thành đen */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.profileContainer {
+  width: 130px;
+  height: auto;
+  margin-top: 20px;
+  margin-right: 40px; 
+  margin-left: auto; 
+  color: #ffffff;
+  font-family: JetBrains Mono NL;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+  .profileContainer {
+    margin-left: 400px;
+  }
+}

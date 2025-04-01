@@ -1,0 +1,34 @@
+.whiteWrapper {
+  border-radius: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 70px 70px 10px 70px;
+  background-color: rgb(15, 15, 15);
+  overflow: hidden;
+  
+  /* Hiệu ứng shadow đa lớp */
+  box-shadow: 
+    0 10px 30px rgba(0, 0, 0, 0.5), /* Bóng chính mờ mạnh */
+    0 20px 50px rgba(0, 0, 0, 0.3), /* Bóng thứ 2 tạo chiều sâu */
+    0 30px 80px rgba(0, 0, 0, 0.2); /* Bóng mềm hơn ở xa */
+  
+  transition: box-shadow 0.3s ease-in-out; /* Hiệu ứng mượt */
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  opacity: 10%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* Thêm style cho container của children */
+.whiteWrapper > *:not(.video) {
+  position: relative;
+  z-index: 2;
+}
