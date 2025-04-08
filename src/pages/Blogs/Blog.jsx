@@ -2,7 +2,6 @@ import React from "react";
 import { FiGithub } from 'react-icons/fi';
 import { useState } from "react";
 import styles from "./Blog.module.css";
-import computer from "../../assets/computer.jpg";
 
 function Blog() {
 

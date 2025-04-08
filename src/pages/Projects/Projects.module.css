@@ -1,11 +1,51 @@
 .projectsContainer {
-    width: 130px;
-    height: auto;
-    margin-top: 20px;
-    margin-right: 40px; 
-    margin-left: auto; 
-    color: #ffffff;
-    font-family: JetBrains Mono NL;
-    font-size: 13px;
-    line-height: 1.6;
+  width: 80%;
+  height: 400px;
+  max-width: 1000px;
+  margin-top: -200px;
+  margin-left: auto;
+  display: grid;
+  /* background-color: rgb(15, 15, 15); */
+
+}
+
+.projectCard {
+  height: 25%;
+  /* background-color: rgb(166, 13, 13); */
+  padding-left: 700px;
+  display: grid;
+}
+
+.projectName {
+  color: #ffffff;
+  font-family: JetBrains Mono NL Thin;
+  font-size: 35px;
+  width: auto;
+  margin-left: -350px;
+  height: auto;
+  /* background-color: rgb(94, 173, 222); */
+  text-decoration: none;
+}
+
+.projectName:hover {
+  opacity: 0.4; 
+}
+
+.projectDescription {
+  color: #ffffff;
+  font-family: 'JetBrains Mono NL';
+  width: 500px;
+  margin-left: -350px;
+  font-size: 13px;
+  line-height: 1.6;
+  /* background-color: rgb(94, 173, 222); */
+  opacity: 0.7;
+}
+/* Responsive Design  */
+@media (max-width: 768px) {
+  .projectsContainer {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    width: 90%;
+    padding: 10px;
   }
+}
