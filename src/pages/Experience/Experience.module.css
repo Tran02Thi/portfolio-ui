@@ -1,11 +1,11 @@
 .experienceContainer {
-    width: 130px;
-    height: auto;
-    margin-top: 20px;
-    margin-right: 40px; 
-    margin-left: auto; 
+    /* width: 130px; */
+    height: 100%;
+    /* background-color: rgb(15, 15, 15); */
+    margin-top: -50px;
+    margin-left: 200px; 
     color: #ffffff;
     font-family: JetBrains Mono NL;
     font-size: 13px;
-    line-height: 1.6;
+    position: relative;
   }

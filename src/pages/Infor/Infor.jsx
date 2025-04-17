@@ -29,7 +29,7 @@ function Infor() {
           rel="noopener noreferrer"
           className={styles.customLink}
         >
-          linked
+          linkedIn
         </a>
         <a
           href="https://www.instagram.com/tranthi_25/"

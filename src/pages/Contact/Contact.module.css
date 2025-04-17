@@ -1,11 +1,10 @@
 .contactContainer {
-    width: 130px;
-    height: auto;
-    margin-top: 20px;
+    width: 330px;
+    margin-top: 200px;
     margin-right: 40px; 
     margin-left: auto; 
     color: #ffffff;
     font-family: JetBrains Mono NL;
-    font-size: 13px;
-    line-height: 1.6;
+    font-size: 11px;
+    opacity: 0.1;
   }
