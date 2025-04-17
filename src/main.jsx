@@ -2,10 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout/Layout'
-// import Home from './pages/Home/Home'
-// import Blog from './pages/Blogs/Blog'
-// import Projects from './pages/Projects/Projects'
-
 import "./assets/styles/global.css";
 
 // ReactDOM.createRoot(document.getElementById('root')).render(
