@@ -8,7 +8,7 @@ function Infor() {
   return (
     <div className={styles.inforContainer}>
       <Card
-        imageSrc="https://i.postimg.cc/vHjcRP2J/em.jpg"
+        imageSrc="https://i.postimg.cc/ZYr69CXS/CV-Avatar.jpg"
         altText="Trần Văn Thi"
         captionText="Hello World"
         containerHeight="200px"
