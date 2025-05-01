@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Tran02Thi.github.io/portfolio-ui/",
+  "homepage": "https://Tran02Thi.github.io/portfolio-ui",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
