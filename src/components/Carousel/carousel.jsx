@@ -4,37 +4,45 @@ import { motion, useMotionValue, useTransform } from "framer-motion";
 import { FiCircle, FiCode, FiFileText, FiLayers, FiLayout } from "react-icons/fi";
 
 import "./Carousel.css";
+// import dataEngineerImg from "../../assets/images/VETC.png";
+import {dataEngineerImg, devopsImg, projectImg } from "../../assets/images/";
 
 const DEFAULT_ITEMS = [
   {
-    title: "Text Animations",
-    description: "Cool text animations for your projects.",
+    title: "Intern Data Engineer",
+    description: "Công ty Cổ phần Tasco",
     id: 1,
-    icon: <FiFileText className="carousel-icon" />,
+    icon: (
+      <img
+        src={dataEngineerImg}
+        alt="VETC"
+        className="carousel-icon"
+      />
+    )
   },
   {
-    title: "Animations",
-    description: "Smooth animations for your projects.",
+    title: "Intern DevOps",
+    description: "Công ty Cổ phần và Phát triển giải pháp phần mềm CYBERSKILL",
     id: 2,
-    icon: <FiCircle className="carousel-icon" />,
+    icon: (
+      <img
+        src={devopsImg}
+        alt="CYBERSKILL"
+        className="carousel-icon"
+      />
+    )
   },
   {
-    title: "Components",
-    description: "Reusable components for your projects.",
+    title: "Project Mentoring School",
+    description: "Saigon Institute of Technology (Saigon Tech)",
     id: 3,
-    icon: <FiLayers className="carousel-icon" />,
-  },
-  {
-    title: "Backgrounds",
-    description: "Beautiful backgrounds and patterns for your projects.",
-    id: 4,
-    icon: <FiLayout className="carousel-icon" />,
-  },
-  {
-    title: "Common UI",
-    description: "Common UI components are coming soon!",
-    id: 5,
-    icon: <FiCode className="carousel-icon" />,
+    icon: (
+      <img
+        src={projectImg}
+        alt="SaiGon Tech"
+        className="carousel-icon"
+      />
+    )
   },
 ];
 
@@ -45,14 +53,14 @@ const SPRING_OPTIONS = { type: "spring", stiffness: 300, damping: 30 };
 
 export default function Carousel({
   items = DEFAULT_ITEMS,
-  baseWidth = 300,
+  baseWidth = 500,
   autoplay = false,
   autoplayDelay = 3000,
   pauseOnHover = false,
   loop = false,
   round = false,
 }) {
-  const containerPadding = 16;
+  const containerPadding = 17;
   const itemWidth = baseWidth - containerPadding * 2;
   const trackItemOffset = itemWidth + GAP;
 
@@ -134,11 +142,11 @@ export default function Carousel({
   const dragProps = loop
     ? {}
     : {
-      dragConstraints: {
-        left: -trackItemOffset * (carouselItems.length - 1),
-        right: 0,
-      },
-    };
+        dragConstraints: {
+          left: -trackItemOffset * (carouselItems.length - 1),
+          right: 0,
+        },
+      };
 
   return (
     <div
@@ -157,7 +165,9 @@ export default function Carousel({
           width: itemWidth,
           gap: `${GAP}px`,
           perspective: 100,
-          perspectiveOrigin: `${currentIndex * trackItemOffset + itemWidth / 2}px 50%`,
+          perspectiveOrigin: `${
+            currentIndex * trackItemOffset + itemWidth / 2
+          }px 50%`,
           x,
         }}
         onDragEnd={handleDragEnd}
@@ -187,9 +197,7 @@ export default function Carousel({
               transition={effectiveTransition}
             >
               <div className={`carousel-item-header ${round ? "round" : ""}`}>
-                <span className="carousel-icon-container">
-                  {item.icon}
-                </span>
+                <span className="carousel-icon-container">{item.icon}</span>
               </div>
               <div className="carousel-item-content">
                 <div className="carousel-item-title">{item.title}</div>
@@ -204,8 +212,9 @@ export default function Carousel({
           {items.map((_, index) => (
             <motion.div
               key={index}
-              className={`carousel-indicator ${currentIndex % items.length === index ? "active" : "inactive"
-                }`}
+              className={`carousel-indicator ${
+                currentIndex % items.length === index ? "active" : "inactive"
+              }`}
               animate={{
                 scale: currentIndex % items.length === index ? 1.2 : 1,
               }}

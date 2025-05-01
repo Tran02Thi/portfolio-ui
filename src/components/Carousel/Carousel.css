@@ -4,7 +4,7 @@
     overflow: hidden;
     border: 1px solid #555;
     border-radius: 24px;
-    padding: 16px;
+    padding: 15px;
     /* This padding is taken into account for item width */
     --outer-r: 24px;
     --p-distance: 12px;
@@ -71,40 +71,41 @@
   
   .carousel-item-header {
     margin-bottom: 16px;
-    padding: 20px;
+    padding: 10px;
     padding-top: 20px;
   }
   
   .carousel-icon-container {
     display: flex;
-    height: 28px;
-    width: 28px;
+    height: 80px;
+    width: 80px;
     align-items: center;
     justify-content: center;
+    margin-left: 60px;
     border-radius: 50%;
     background-color: #fff;
   }
   
   .carousel-icon {
-    height: 16px;
-    width: 16px;
+    height: 56px;
+    width: 56px;
     color: #060606;
   }
   
   .carousel-item-content {
-    padding: 20px;
-    padding-bottom: 20px;
+    padding: 10px;
+    padding-bottom: 10px;
   }
   
   .carousel-item-title {
     margin-bottom: 4px;
-    font-weight: 900;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 15px;
     color: #fff;
   }
   
   .carousel-item-description {
-    font-size: 14px;
+    font-size: 10px;
     color: #fff;
   }
   
@@ -117,11 +118,11 @@
   }
   
   .carousel-indicators {
-    margin-top: 16px;
+    margin-top: 30px;
     display: flex;
     width: 150px;
     justify-content: space-between;
-    padding: 0 32px;
+    padding: 0 36px;
   }
   
   .carousel-indicator {
