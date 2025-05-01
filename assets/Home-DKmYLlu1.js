@@ -1,0 +1,1 @@
+import{j as e}from"./index-Dj6qkcoM.js";const n="_profileContainer_uss8y_9",o={profileContainer:n};function r(){return e.jsx("div",{className:o.profileContainer,children:e.jsx("p",{children:"Born in 2003 in Rach Gia, Kien Giang. Addicted to the freedom of not overthinking, and on a journey to rediscover myself."})})}export{r as default};
