@@ -1,0 +1,1 @@
+import{j as t}from"./index-mdxumwvV.js";const n="_contactContainer_qpfjb_1",a={contactContainer:n};function e(){return t.jsx("div",{className:a.contactContainer,children:t.jsx("p",{children:"Don't Ever Take Sides Against the Family"})})}export{e as default};
